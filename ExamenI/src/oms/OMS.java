@@ -63,10 +63,18 @@ public abstract class OMS { //Similar a patron Template
 		System.out.print("Hospital: "+this.hospital.getHospitalNombre());
 		if(this.hospital.getHospitalNombre()=="Hospital Mexico")
 		{
-			pruebasPCR.forEach((n) -> System.out.println(n));
+			//pruebasPCR.forEach((n) -> System.out.println(n));
 			
+			for(int i = 0; i < pruebasPCR.size(); i++)
+			{
+				System.out.println(pruebasPCR.get(i));
+			}
 		}else {
-			pruebasRapida.forEach((n) -> System.out.println(n));
+			//pruebasRapida.forEach((n) -> System.out.println(n));
+			for(int i = 0; i < pruebasRapida.size(); i++)
+			{
+				System.out.println(pruebasRapida.get(i));
+			}
 		}
 	
 	}
